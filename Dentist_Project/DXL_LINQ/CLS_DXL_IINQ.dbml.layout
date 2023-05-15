@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11.875, 8.5" name="CLS_DXL_IINQ">
+  <DataContextMoniker Name="/CLS_DXL_IINQDataContext" />
+  <nestedChildShapes>
+    <classShape Id="f94fea00-cfc9-40b1-9c7b-9e5dd1a02c06" absoluteBounds="9.625, 4.375, 2, 3.3093082682291666">
+      <DataClassMoniker Name="/CLS_DXL_IINQDataContext/Table_Patient" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a859c61d-7e20-4034-96e1-be1c1a073aea" absoluteBounds="9.64, 4.835, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1ac3cbeb-ab49-4428-b929-07c0870c7226" absoluteBounds="6.375, 2.5, 2, 2.5401025390625">
+      <DataClassMoniker Name="/CLS_DXL_IINQDataContext/Table_Expence" />
+      <nestedChildShapes>
+        <elementListCompartment Id="74ccfce0-e9d5-4dcd-9932-d115a596ed6a" absoluteBounds="6.39, 2.96, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="78b2068f-bc07-42bc-a36b-4236f0577e05" absoluteBounds="3, 3.25, 2, 3.3093082682291666">
+      <DataClassMoniker Name="/CLS_DXL_IINQDataContext/Table_User_Permission" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2dfdc161-04cf-4177-add7-e2655125dfa0" absoluteBounds="3.015, 3.71, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Dentist_DB" Class="CLS_DXL_IINQDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=.;Initial Catalog=Dentist_DB;Integrated Security=True" SettingsObjectName="Dentist_Project.Properties.Settings" SettingsPropertyName="Dentist_DBConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Table_Patients" Member="Table_Patients">
+    <Type Name="Table_Patient">
+      <Column Name="Patient_id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Patient_tc" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Patient_name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Patient_age" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Patient_gender" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Patient_phone" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Patient_date" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="Patient_email" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="cost" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="paied" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="remind" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="Patient_img" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Patient_state" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Table_Expences" Member="Table_Expences">
+    <Type Name="Table_Expence">
+      <Column Name="Expences_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Expences_No" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="Expences_value" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="Expences_Name" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="Expences_Date" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Expences_Note" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Expences_FileName" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Expences_Attachment" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Expences_File_Type" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Table_User_Permission" Member="Table_User_Permissions">
+    <Type Name="Table_User_Permission">
+      <Column Name="User_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="User_Name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="User_Email" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="User_Password" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="User_Type" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="New_Patient" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Patients_Manegment" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="New_User" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="User_Manegment" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Income" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Spending" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Earn" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="[Backup]" Member="Backup" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
